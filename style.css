@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  position: absolute;
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  line-height: 20px;
+}
+
+.component1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2.5rem;
+  border-radius: 5px 0 0 5px;
+}
+.component2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2.5rem;
+}
+.component3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2.5rem;
+  border-radius: 0 5px 5px 0;
+}
+
+h2 {
+  font-size: 25px;
+  color: hsl(0, 0%, 95%);
+  margin: 2rem 0;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+button {
+  margin-top: 4rem;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 50px;
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  padding: 0.7rem;
+  width: 9rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.button1:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+}
+.button2:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+}
+.button3:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    overflow: visible;
+    height: 800px;
+  }
+  .card {
+    flex-direction: column;
+    line-height: 10px;
+  }
+  button {
+    margin-top: 2rem;
+  }
+  .component1 {
+    border-radius: 5px 5px 0 0;
+    padding: 2rem;
+  }
+  .component2 {
+    border-radius: 0;
+    padding: 2rem;
+  }
+  .component3 {
+    border-radius: 0 0 5px 5px;
+    padding: 2rem;
+  }
+}
